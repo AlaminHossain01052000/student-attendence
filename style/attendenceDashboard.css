@@ -1,0 +1,39 @@
+
+.attendence-navbar{
+    background-color: #eee;
+    padding: 10px 0;
+}
+.attendence-navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#chartContainer{
+    border:2px solid black;
+    height: 300px; 
+    width: 450px;
+    
+    
+}
+#chartContainer2{
+    border:2px solid black;
+    height: 300px; 
+    width: 450px;
+
+}
+@media only screen and (max-width: 400px){
+    #chartContainer{
+        
+        width: 300px;
+        height:300px;
+        
+    }
+    #chartContainer2{
+      
+        width: 3300px ;
+        height: 300px ;
+    
+    }
+}

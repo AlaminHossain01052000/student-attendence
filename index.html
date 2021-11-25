@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Document</title>
+
+</head>
+
+<body class="my-bg mt-5">
+    <header class="my-5">
+        <h1 class="text-white text-center">Welcome Admin</h1>
+        <h4 class="toggle-logged text-white">Logout</h4>
+    </header>
+    <main style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="./images/contact.png" class="round-bg" style="background-color: #ff6b6b;" width="250px"
+                        height="220px" alt="" id="new-register">
+                    <h2 style="color: #fff; font-weight: 600;" class=" text-center mt-3 font-roboto">
+                        Register New Student</h2>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img id="add-photo"
+                        src="./images/clay-plus-sign-mathematics-beige-cute-graphic-kids-removebg-preview.png"
+                        width="250px" height="220px" class="round-bg" style="background-color: #48dbfb;" alt="">
+                    <h2 style="color: #fff; font-weight: 600;" class=" text-center mt-3 font-roboto">Add
+                        Photos</h2>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="./images/exchange.png" width="250px" height="220px" class="round-bg"
+                        style="background-color: #5f27cd;" alt="">
+                    <h2 style="color: #fff; font-weight: 600;" class=" text-center mt-3 font-roboto">Train
+                    </h2>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img id="view-attendence"
+                        src="./images/business-report-graphs-charts-business-reports-pile-documents-business-concept.jpg"
+                        width="250px" height="220px" class="round-bg" style="background-color: #1dd1a1;" alt="">
+                    <h2 style="color: #fff; font-weight: 600;" class=" text-center mt-3 font-roboto">View Attendence
+                        Report</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container bg-white p-1 mt-5">
+        <h3 class="px-3 text-success fs-4">Student Registered Successfully !</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        document.getElementById("new-register").onclick = function () {
+            location.href = "./register.html";
+        };
+
+        document.getElementById("add-photo").onclick = function () {
+            location.href = "./username.html";
+        };
+        document.getElementById("view-attendence").onclick = function () {
+            location.href = "./attendenceDashboard.html";
+        };
+
+    </script>
+
+</body>
+
+</html>

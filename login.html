@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="my-bg">
+    <header>
+        <nav class="py-3" style="background-color: rgba(0, 0, 0, 0.3);">
+            <a id="home-button" class="text-primary text-decoration-none fs-5 ms-3">Home</a>
+
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h2 class="text-white fs-4">Log In</h2>
+            <hr class="bg-white border border-white">
+            <form action="">
+                <div class="mb-3">
+                    <label for="username" class="form-label text-white">Username *</label>
+                    <input type="name" class="form-control" name="username" required>
+
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label text-white">Password *</label>
+                    <input type="password" class="form-control" name="password" required>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <input type="submit" value="Register" class="submit-button">
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+    <script type="text/javascript">
+        document.getElementById("home-button").onclick = function () {
+            location.href = "./studentInterface.html";
+        };
+    </script>
+</body>
+
+</html>

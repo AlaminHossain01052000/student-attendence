@@ -1,0 +1,44 @@
+.my-bg{
+    background: url("../images/5295526.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+a:hover{
+    cursor: pointer;
+}
+.form-container{
+    width:38%;
+    background-color:rgba(87, 101, 116,0.5);
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+.submit-button{
+    border: 1px solid #0abde3;
+    background-color: transparent;
+    color: #0abde3;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.submit-button:hover{
+    color: #c8d6e5;
+}
+.user-info-rules{
+    color: rgba(200, 214, 229,0.5);
+    font-size: 13px;
+}
+@media only screen and (max-width: 600px){
+	.form-container{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 425px){
+	.form-container{
+        width: 80%;
+    }
+}
