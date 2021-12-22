@@ -16,7 +16,10 @@
 <body class="my-bg mt-5">
     <header class="my-5">
         <h1 class="text-white text-center">Welcome Admin</h1>
-        <h4 class="toggle-logged text-white">Logout</h4>
+        <h4 class="toggle-logged text-white">
+            <button style="border: 0px;padding: 0px;background-color: transparent;color: wheat;"
+                onclick="goToHome()">Logout</button>
+        </h4>
     </header>
     <main style="margin-top: 100px;">
         <div class="container">
@@ -41,7 +44,7 @@
                     </h2>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3">
-                    <img id="view-attendence"
+                    <img id="view-attendence" onclick="goToAttendenceDashboard()"
                         src="./images/business-report-graphs-charts-business-reports-pile-documents-business-concept.jpg"
                         width="250px" height="220px" class="round-bg" style="background-color: #1dd1a1;" alt="">
                     <h2 style="color: #fff; font-weight: 600;" class=" text-center mt-3 font-roboto">View Attendence
@@ -67,7 +70,12 @@
         document.getElementById("view-attendence").onclick = function () {
             location.href = "./attendenceDashboard.html";
         };
-
+        function goToHome() {
+            location.href = "./studentInterface.html";
+        }
+        const goToAttendenceDashboard = () => {
+            location.href = "./attendenceDashboard.html";
+        }
     </script>
 
 </body>

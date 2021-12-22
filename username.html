@@ -33,7 +33,7 @@
 
                 <div class="mb-3">
 
-                    <input type="submit" value="Register" class="submit-button">
+                    <input type="submit" value="Register" id="submit-button-id" class="submit-button">
                 </div>
 
 
@@ -43,6 +43,9 @@
     <script type="text/javascript">
         document.getElementById("home-toggle").onclick = function () {
             location.href = "./index.html";
+        };
+        document.getElementById("submit-button-id").onclick = function () {
+            location.href = "../openCamera.html";
         };
     </script>
 </body>

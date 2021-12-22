@@ -25,14 +25,14 @@
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="attendence-in-image-container">
                     <img class="attendence-in-image" width="250px" height="250px"
-                        src="./images/attendenceIn-removebg-preview.png" alt="">
+                        src="./images/attendenceIn-removebg-preview.png" alt="attendenceIn" onclick="openCamera()">
                 </div>
 
                 <h2 class="text-white text-lg-center fs-4 mt-4 mb-5">Mark Your Attendence - In</h2>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="attendence-in-image-container2">
-                    <img class="attendence-in-image2" width="300px" height="300px"
+                    <img onclick="openCamera()" class="attendence-in-image2" width="300px" height="300px"
                         src="./images/attendence-out-removebg-preview.png" alt="">
                 </div>
 
@@ -52,6 +52,9 @@
         document.getElementById("log-in").onclick = function () {
             location.href = "./login.html";
         };
+        function openCamera() {
+            location.href = "./openCamera.html";
+        }
     </script>
 </body>
 

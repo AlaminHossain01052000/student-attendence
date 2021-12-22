@@ -22,6 +22,11 @@
         <div class="form-container">
             <h2 class="text-white fs-4">Log In</h2>
             <hr class="bg-white border border-white">
+            <div id="warning" class="bg-white p-3">
+                <h3 class="fs-6 text-success">&#8226; Please enter a correct username and password. Note that both field
+                    may be case sensitive
+                </h3>
+            </div>
             <form action="">
                 <div class="mb-3">
                     <label for="username" class="form-label text-white">Username *</label>
@@ -36,7 +41,7 @@
 
                 <div class="mb-3">
 
-                    <input type="submit" value="Register" class="submit-button">
+                    <input type="submit" value="Register" id="submit-button-id" class="submit-button">
                 </div>
 
 
@@ -46,6 +51,9 @@
     <script type="text/javascript">
         document.getElementById("home-button").onclick = function () {
             location.href = "./studentInterface.html";
+        };
+        document.getElementById("submit-button-id").onclick = function () {
+            location.href = "./index.html";
         };
     </script>
 </body>
